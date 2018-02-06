@@ -1,0 +1,159 @@
+---
+title: Basket - Keep Looking
+bodyClass: page-basket
+---
+extends shared/_layout
+block content
+    
+
+    // Basket :: Start
+    .basket
+        .container
+ 
+            h2.basket__heading Ваша корзина
+
+            table.basket__table
+                tbody
+                    tr
+                        td
+                            figure.basket__image
+                                img(src="img/img-products-1.jpg", alt="")
+                        td
+                            h3.basket__title
+                                a(href="#") DAVINES
+                            p.basket__text Восстанавливающий гель для волос, 250 мл
+                            mark.basket__id артикул: 5847akf
+                        td
+                            .basket__count
+                                label.basket__label КОЛИЧЕСТВО
+                                select.ui-select.ui-select--number.basket__select
+                                    option 1 ШТ
+                                    option 2 ШТ
+                                    option 3 ШТ
+                                    option 4 ШТ
+                                    option 5 ШТ
+                        td
+                            button.basket__delete
+                                +icon('ico-delete')
+                            p.basket__price 1 500 ₽
+
+                    tr
+                        td
+                            figure.basket__image
+                                img(src="img/img-products-2.jpg", alt="")
+                        td
+                            h3.basket__title
+                                a(href="#") DAVINES
+                            p.basket__text Кокосовая сыворотка для лица длительного действия, 250 мл
+                            mark.basket__id артикул: 5847akf
+                        td
+                            .basket__count
+                                label.basket__label КОЛИЧЕСТВО
+                                select.ui-select.ui-select--number.basket__select
+                                    option 1 ШТ
+                                    option 2 ШТ
+                                    option 3 ШТ
+                                    option 4 ШТ
+                                    option 5 ШТ
+                        td
+                            button.basket__delete
+                                +icon('ico-delete')
+                            p.basket__price 1 500 ₽
+
+                    tr
+                        td
+                            figure.basket__image
+                                img(src="img/img-products-3.jpg", alt="")
+                        td
+                            h3.basket__title
+                                a(href="#") DAVINES
+                            p.basket__text Увлажняющая маска для поврежденных волос, 250 мл
+                            mark.basket__id артикул: 5847akf
+                        td
+                            .basket__count
+                                label.basket__label КОЛИЧЕСТВО
+                                select.ui-select.ui-select--number.basket__select
+                                    option 1 ШТ
+                                    option 2 ШТ
+                                    option 3 ШТ
+                                    option 4 ШТ
+                                    option 5 ШТ
+                        td
+                            button.basket__delete
+                                +icon('ico-delete')
+                            p.basket__price 1 500 ₽
+                tfoot
+                    tr
+                        td(colspan="4")
+
+                            .basket__ctrl
+                                table.basket__total
+                                    tr
+                                        td
+                                            mark итого
+                                        td
+                                            mark 2000 ₽
+                                    tr
+                                        td всего к оплате
+                                        td 2000 ₽
+
+                                a(href="#").btn.btn--block.btn--purple ОФОРМИТЬ ЗАКАЗ
+
+    // Basket :: End
+
+    // Items :: Start
+
+    .items.items--other
+        .container
+            h2.items__heading ВОЗМОЖНО ВЫ ЗАБЫЛИ…
+            .items__carousel.js-carousel
+
+                a(href="#").item
+                    h3.item__title BLITHE
+                    figure.item__image
+                        img(src="img/img-products-1.jpg", alt="")
+                    p.item__text Антивозрастная сыворотка для лица
+                    span.item__price ОТ 1 500 ₽
+
+                a(href="#").item
+                    h3.item__title DR.JART+
+                    figure.item__image
+                        img(src="img/img-products-2.jpg", alt="")
+                    p.item__text Маска с эффектом аппаратного лифтинга
+                    span.item__price ОТ 1 500 ₽
+
+                a(href="#").item
+                    h3.item__title DR.JART+
+                    figure.item__image
+                        img(src="img/img-products-3.jpg", alt="")
+                    p.item__text Антивозростная сыворотка с муцином улитки Антивозростная сыворотка с муцином улитки
+                    span.item__price ОТ 1 500 ₽
+
+                a(href="#").item
+                    h3.item__title ST BARTH
+                    figure.item__image
+                        img(src="img/img-products-4.jpg", alt="")
+                    p.item__text Восстанавливающий гель для волос
+                    span.item__price ОТ 1 500 ₽
+
+    // Items :: End
+
+    // Subsc :: Start
+    .subsc
+        .container
+            h2.subsc__heading Не хотите ничего пропустить?
+            p.subsc__text Подписывайтесь на нашу полезную рассылку и оставайтесь в курсе событий!
+            .subsc__form
+                form(action="#")
+                    label.subsc__field
+                        input(type="text" placeholder="" required).subsc__input
+                        span.subsc__label ВАШ E-MAIL
+                    button.subsc__btn ПОДПИСАТЬСЯ
+    // Subsc :: End
+
+
+
+
+            
+
+

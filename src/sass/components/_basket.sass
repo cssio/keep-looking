@@ -1,0 +1,196 @@
+// Basket
+
+.basket
+	max-width: 940px
+	margin: 0 auto
+	padding: 40px 0 60px
+
+.basket__heading
+	display: block
+	font: 400 28px/35px 'Optima', Helvetica, Arial, sans-serif
+	margin: 0 0 12px
+
+.basket__table
+	margin: 0
+	width: 100%
+	border-collapse: collapse
+	border-spacing: 0
+	& > tbody > tr, & > tfoot > tr
+		position: relative
+	& > tbody > tr > td, & > tfoot > tr > td
+		position: relative
+		padding: 20px 10px
+		border-top: 1px solid #000000
+		border-bottom: 1px solid #000000
+		vertical-align: top
+		&:first-child
+			padding-left: 0
+			width: 1%
+		&:last-child
+			padding-right: 0
+	& > tfoot
+		& > tr > td
+			border-bottom: none
+			padding-bottom: 0
+	+r($mobile)
+		& > tbody > tr
+			display: block
+			padding: 30px 0 30px 110px
+			border-top: 1px solid #000000
+		& > tfoot > tr
+			display: block
+			padding: 30px 0
+			border-top: 1px solid #000000
+		& > tbody > tr > td, & > tfoot > tr > td
+			position: static
+			display: block
+			border: none
+			padding: 0
+
+
+.basket__image
+	margin: 0
+	padding: 10px
+	width: 140px
+	height: 140px
+	background: #fff
+	display: flex
+	align-items: center
+	justify-content: center
+	img
+		display: block
+		max-width: 100%
+		max-height: 100%
+	+r($mobile)
+		position: absolute
+		top: 30px
+		left: 0
+		width: 90px
+		height: 90px
+
+
+.basket__title
+	display: block
+	margin: 0 0 7px
+	padding: 10px 0
+	font-size: 12px
+	line-height: 15px
+	font-weight: 700
+	letter-spacing: 1.4px
+	text-transform: uppercase
+	a
+		transition: 0.25s
+		color: #000
+		&:hover
+			color: #ccc
+	+r($mobile)
+		font-size: 10px
+		margin: 0
+
+.basket__text
+	display: block
+	max-width: 220px
+	margin: 0 0 27px
+	font: 12px/20px 'Optima', Helvetica, Arial, sans-serif
+	letter-spacing: 0.5px
+	+r($mobile)
+		margin: 0 0 9px
+
+.basket__id
+	display: block
+	background: none
+	font-size: 12px
+	line-height: 1
+	font-weight: 700
+	text-transform: uppercase
+	color: rgba(0, 0, 0, 0.39)
+	+r($mobile)
+		font-size: 10px
+		margin: 0 0 15px
+
+
+.basket__count
+	max-width: 140px
+	+r($mobile)
+		margin: 0 0 22px
+
+.basket__label
+	display: block
+	margin: 0 0 7px
+	padding: 10px 0
+	font-size: 12px
+	line-height: 15px
+	font-weight: 700
+	letter-spacing: 1.4px
+	text-transform: uppercase
+	+r($mobile)
+		font-size: 10px
+		line-height: 1
+		padding: 0
+		margin: 0 0 9px
+
+
+
+.basket__select
+	margin: 0
+
+
+.basket__price
+	margin: 0
+	display: block
+	clear: both
+	font-size: 14px
+	font-weight: 700
+	letter-spacing: 1.8px
+	text-align: right
+	white-space: nowrap
+	+r($mobile)
+		text-align: left
+
+.basket__delete
+	display: block
+	background: none
+	padding: 0
+	margin: 0 0 7px
+	color: #000
+	font-size: 10px
+	line-height: 35px
+	float: right
+	cursor: pointer
+	&:hover .ico
+		stroke: red
+	.ico
+		stroke: #000
+	+r($mobile)
+		float: none
+		position: absolute
+		top: 30px
+		right: 0
+
+
+.basket__total
+	width: 100%
+	border-spacing: none
+	border-collapse: collapse
+	font-size: 14px
+	line-height: 1
+	font-weight: 700
+	letter-spacing: 1.8px
+	text-transform: uppercase
+	margin: 6px 0 8px
+
+	mark
+		background: none
+		opacity: 0.4
+	td
+		padding: 0 0 16px
+		&:last-child
+			text-align: right
+
+.basket__ctrl
+	width: 100%
+	.btn
+		width: 100%
+	+rmin($tablet)
+		max-width: 380px
+		float: right

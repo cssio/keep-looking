@@ -1,0 +1,49 @@
+// buttons
+button
+    -webkit-apperance: none
+    border: 0
+    box-shadow: none
+    &:focus
+        outline: none
+
+.btn
+    display: inline-block
+    position: relative
+    text-align: center
+    transition: 0.25s
+    font: 700 12px/28px 'Engravers Gothic', Helvetica, Arial, sans-serif
+    letter-spacing: 1.5px
+    border: 1px solid #000
+    padding: 8px 25px 12px
+    text-transform: uppercase
+    background: none
+    cursor: pointer
+    +rmin($desktop)
+        font-size: 14px
+    &:hover
+        border-color: #d9b1b1
+        background: #d9b1b1
+        color: #fff
+    &:focus, &:active
+        outline: none
+    &--block
+        display: block
+        width: 100%
+
+
+.btn--purple
+    border-color: #d9b1b1
+    background: #d9b1b1
+    color: #fff
+    &:hover
+        background: none
+        color: #d9b1b1
+
+
+.btn--white
+    border-color: #fff
+    color: #fff
+    &:hover
+        border-color: #fff
+        background: #fff
+        color: #000

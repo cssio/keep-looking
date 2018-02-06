@@ -1,0 +1,19 @@
+ProjectTitle: Keep Looking
+
+PageList:
+- file: homepage.html
+  ready: 100
+- file: contacts.html
+  ready: 100
+- file: basket.html
+  ready: 100
+- file: card.html
+  ready: 100
+- file: shop.html
+  ready: 100
+- file: shop-list.html
+  ready: 100
+- file: styleguide.html
+  ready: 100
+- file: landing/index.html
+  ready: 100

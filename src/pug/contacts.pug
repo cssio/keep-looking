@@ -1,0 +1,38 @@
+---
+title: Contacts - Keep Looking
+bodyClass: page-contacts
+---
+extends shared/_layout
+block content
+  
+    .contacts
+        .container
+            .contacts__desc
+
+                dl.contacts__dl
+                    dt АДРЕС
+                    dd
+                        a(href="#") 127051, МОСКВА<br>ПЕТРОВСКИЙ БУЛЬВАР 23
+                    dt ТЕЛЕФОН
+                    dd
+                        a(href="tel:7499350 8050")  +7 (499) 350 8050
+                
+                .contacts__ctrl
+                    a(href="#").btn.js-map-open ПОСМОТРЕТЬ НА КАРТЕ
+
+                .contacts__social
+                    a(href="#").contacts__social-link
+                        +icon('ico-instagram')
+                    a(href="#").contacts__social-link
+                        +icon('ico-facebook')
+            
+            .contacts__map-container.js-map-container
+                button.contacts__map-close.js-map-close
+                .contacts__map#map
+
+    
+    
+    
+
+
+    

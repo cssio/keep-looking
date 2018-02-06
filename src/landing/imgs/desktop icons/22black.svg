@@ -1,0 +1,30 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9 7.991">
+    <defs>
+        <style>
+        .cls-1 {
+            fill: #fff;
+        }
+
+        .cls-2 {
+            mask: url(#mask);
+        }
+        </style>
+        <mask id="mask" x="0" y="0" width="9" height="7.991" maskUnits="userSpaceOnUse">
+            <g transform="translate(-0.5 -0.985)">
+                <g id="mask-2">
+                    <polygon id="path-1" class="cls-1" points="9.5 0.985 0.5 0.985 0.5 8.976 9.5 8.976 9.5 0.985" />
+                </g>
+            </g>
+        </mask>
+    </defs>
+    <title>telegram black</title>
+    <g id="Symbols">
+        <g id="telegram-black">
+            <g id="Page-1">
+                <g class="cls-2">
+                    <path id="Fill-1" d="M3.406,5.185L7.459,2.64a0.072,0.072,0,0,1,.085.114L4.2,5.925a0.712,0.712,0,0,0-.215.423l-0.114.861a0.1,0.1,0,0,1-.2.015L3.228,5.654a0.42,0.42,0,0,1,.178-0.468M0.659,4.816L2.733,5.606l0.8,2.632a0.242,0.242,0,0,0,.388.119L5.079,7.4A0.34,0.34,0,0,1,5.5,7.384L7.584,8.928a0.243,0.243,0,0,0,.383-0.151L9.495,1.285A0.246,0.246,0,0,0,9.167,1L0.657,4.35a0.251,0.251,0,0,0,0,.466" transform="translate(-0.5 -0.985)" />
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

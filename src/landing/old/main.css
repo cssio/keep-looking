@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    display: table;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+body {
+    background: #fff;
+}
+
+#wrap {
+    width: 100%;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 6em;
+    font-family: 'Theano Didot';
+    color: #000;
+}
+
+span {
+    transition: all .3s;
+    opacity: 0;
+}
+
+a.mail {
+    color: #555;
+    font-size: .8em;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+    line-height: 83px;
+}
+
+a.mail:hover {
+    border-bottom-color: #999;
+    color: #999;
+}
+
+span.new-line {
+    opacity: 1;
+    margin: 0;
+    position: relative;
+}
+
+span.new-line:nth-of-type(1) {}
+
+span.new-line:nth-of-type(2) {
+    font-size: 40px;
+    top: -70px;
+}
+
+span.new-line:nth-of-type(3) {
+    top: -80px;
+}
+
+p.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.point {
+    display: inline-block;
+    top: -80px;
+    position: relative;
+}
+
+@media screen and (max-height: 390px) {
+    p.bottom {
+        position: relative;
+        top: -137px;
+    }
+}

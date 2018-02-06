@@ -1,0 +1,324 @@
+---
+title: Shop-list - Keep Looking
+bodyClass: page-basket page-transparent
+---
+extends shared/_layout
+block content
+    
+
+    // Primary :: Start
+
+    .primary
+        .container
+            figure.primary__image
+                img(src="img/img-primary-2.jpg", alt="")
+            .primary__wrapper
+
+                ul.breadcrumbs
+                    li
+                        a(href="#").breadcrumbs__link ГЛАВНАЯ
+                    li
+                        a(href="#").breadcrumbs__link волосы
+                    li
+                        a(href="#").breadcrumbs__link kevin murphy luxUry wash
+                
+                .primary__desc
+                    h1.primary__desc-title ВОЛОСЫ
+                    p.primary__desc-text Атмосфера любви, заботы, спокойствия и уюта — главная ценность и отличительная особенность нашего салона красоты в Москве; состояние, в котором мы живем, творим и работаем.
+
+    
+    // Primary :: End
+
+
+    // Catalog :: Start
+    .catalog
+        .container
+            .row
+                .col-md-3
+
+                    
+                    .filter
+                        form(action="#")
+
+                            span.filter__btn Фильтры
+
+                            .filter__dropdown
+
+                                a(href="#").filter__link ВСЕ ТОВАРЫ
+
+                                a(href="#").filter__link НОВИНКИ
+
+                                dl.filter__menu
+                                    dt ВОЛОСЫ
+                                    dd
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text ШАМПУНИ
+                                            span.filter__check-cancel
+
+                                    dt ЛИЦО
+                                    dd
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text УМЫВАНИЕ
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text МАСКИ
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text КРЕМЫ
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text СЫВОРОТКИ
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text НОЧНОЙ УХОД
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text МАСЛА
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text ГУБЫ
+                                            span.filter__check-cancel
+
+                                    dt ТЕЛО
+                                    dd
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text ДУШ
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text СКРАБЫ
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text МЫЛО
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text КРЕМЫ
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text ЛОСЬОНЫ
+                                            span.filter__check-cancel
+
+                                    dt АКСЕССУАРЫ
+                                    dd
+
+
+                                    dt БРЕНДЫ
+                                    dd
+
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text ARCAYA
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text ART VISAGE
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text BECCA
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text BLITHE
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text DR.JART+
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text EMBRYOLISSE
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text ERBORIAN
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text FEDU
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text LEBEL
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text LYCON
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text NASHI ARGAN
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text PERRICONE MD
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text PETITFEE
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text ROMANOVA MAKE UP
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text SKIN&CO
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text ST.BARTH
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text SUDA
+                                            span.filter__check-cancel
+
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text ULTRUE
+                                            span.filter__check-cancel
+                                        label.filter__check
+                                            input(type="checkbox").filter__check-input
+                                            span.filter__check-text WISH FORMULA
+                                            span.filter__check-cancel
+
+                .col-md-9
+
+
+                    // Items :: Start
+
+                    .items
+
+                        .items__sorting
+                            p.items__sorting-visible <span>Показано</span> 9 из 30 <span>товаров</span>
+                            .items__sorting-ctrl
+                                label.items__sorting-label СОРТИРОВАТЬ
+                                select.ui-select.ui-select--sorting
+                                    option ПО ПОПУЛЯРНОСТИ
+                                    option ПО Цене
+
+                        .items__grid
+                            .row
+                                .col-sm-6.col-lg-4
+                                    a(href="#").item
+                                        h3.item__title BLITHE
+                                        figure.item__image
+                                            img(src="img/img-products-1.jpg", alt="")
+                                        p.item__text Антивозрастная сыворотка для лица
+                                        span.item__price ОТ 1 500 ₽
+
+                                .col-sm-6.col-lg-4
+                                    a(href="#").item
+                                        h3.item__title DR.JART+
+                                        figure.item__image
+                                            img(src="img/img-products-2.jpg", alt="")
+                                        p.item__text Маска с эффектом аппаратного лифтинга
+                                        span.item__price ОТ 1 500 ₽
+
+                                .col-sm-6.col-lg-4
+                                    a(href="#").item.item--empty
+                                        span.item__empty НЕТ В НАЛИЧИИ
+                                        h3.item__title DR.JART+
+                                        figure.item__image
+                                            img(src="img/img-products-3.jpg", alt="")
+                                        p.item__text Антивозростная сыворотка с муцином улитки Антивозростная сыворотка с муцином улитки
+                                        span.item__price ОТ 1 500 ₽
+
+                                .col-sm-6.col-lg-4
+                                    a(href="#").item
+                                        h3.item__title ST BARTH
+                                        figure.item__image
+                                            img(src="img/img-products-4.jpg", alt="")
+                                        p.item__text Восстанавливающий гель для волос
+                                        span.item__price ОТ 1 500 ₽
+
+                                .col-sm-6.col-lg-4
+                                    a(href="#").item
+                                        h3.item__title MOIST DIANE
+                                        figure.item__image
+                                            img(src="img/img-products-5.jpg", alt="")
+                                        p.item__text Увлажняющий шампунь для волос
+                                        span.item__price ОТ 1 500 ₽
+
+                                .col-sm-6.col-lg-4
+                                    a(href="#").item
+                                        h3.item__title ST BARTH
+                                        figure.item__image
+                                            img(src="img/img-products-6.jpg", alt="")
+                                        p.item__text Кокосовое масло для лица и тела
+                                        span.item__price ОТ 1 500 ₽
+
+                                .col-sm-6.col-lg-4
+                                    a(href="#").item
+                                        h3.item__title DR.JART+
+                                        figure.item__image
+                                            img(src="img/img-products-7.jpg", alt="")
+                                        p.item__text Антивозростная сыворотка с муцином улитки
+                                        span.item__price ОТ 1 500 ₽
+
+                                .col-sm-6.col-lg-4
+                                    a(href="#").item
+                                        h3.item__title BLITHE
+                                        figure.item__image
+                                            img(src="img/img-products-8.jpg", alt="")
+                                        p.item__text Сплэш-маска для сияния
+                                        span.item__price ОТ 1 500 ₽
+                        
+
+                        .pagination
+                            a(href="#").pagination__link.pagination__prev.is-disabled
+                                +icon('ico-arrow')
+                                | Предыдущая СТРАНИЦА
+                            a(href="#").pagination__link.pagination__next
+                                | СЛЕДУЮЩАЯ СТРАНИЦА
+                                +icon('ico-arrow')
+                            ul.pagination__menu
+                                li
+                                    a(href="#").pagination__link.is-active 1
+                                li
+                                    a(href="#").pagination__link 2
+                                li
+                                    a(href="#").pagination__link 3
+                                li
+                                    a(href="#").pagination__link 4
+
+                                
+
+
+                    // Items :: End
+
+    // Catalog :: End
+    
+
+    // Subsc :: Start
+    .subsc
+        .container
+            h2.subsc__heading Не хотите ничего пропустить?
+            p.subsc__text Подписывайтесь на нашу полезную рассылку и оставайтесь в курсе событий!
+            .subsc__form
+                form(action="#")
+                    label.subsc__field
+                        input(type="text" placeholder="" required).subsc__input
+                        span.subsc__label ВАШ E-MAIL
+                    button.subsc__btn ПОДПИСАТЬСЯ
+    // Subsc :: End
+
+
+
+
+            
+
+

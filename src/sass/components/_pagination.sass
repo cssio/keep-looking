@@ -1,0 +1,80 @@
+// pagination
+
+.pagination
+	display: flex
+	justify-content: center
+	font-size: 12px
+	line-height: 20px
+	letter-spacing: 1.5px
+	position: relative
+	white-space: nowrap
+	text-transform: uppercase
+	border-top: 1px solid #000000
+	padding: 12px 0
+	margin: 10px 0
+
+.pagination__menu
+	margin: 0
+	padding: 0
+	list-style: none
+	overflow: hidden
+	width: 50%
+	text-align: center
+	& > li
+		display: inline-block
+		vertical-align: top
+		margin: 0 2px
+	+r($desktop)
+		width: 100%
+
+.pagination__link
+	position: relative
+	color: #000
+	display: block
+	.ico
+		fill: none
+		stroke: currentColor
+		font-size: 5px
+		display: inline-block
+		vertical-align: middle
+		position: relative
+		top: -1px
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 0
+		height: 1px
+		background: #000
+		transition: 0.25s
+	&:hover, &.is-active
+		&:after
+			width: 100%
+	&.is-disabled
+		visibility: hidden
+
+
+.pagination__prev
+	position: absolute
+	top: 12px
+	left: 0
+	.ico
+		margin: 0 5px 0 0
+		transform: rotate(90deg)
+
+.pagination__next
+	position: absolute
+	top: 12px
+	right: 0
+	margin: 0
+	text-align: right
+	.ico
+		margin: 0 0 0 5px
+		transform: rotate(-90deg)
+
+	
+.pagination__prev, .pagination__next
+	+r($desktop)
+		display: none

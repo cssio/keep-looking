@@ -1,0 +1,231 @@
+---
+title: Shop - Keep Looking
+bodyClass: page-basket page-transparent
+---
+extends shared/_layout
+block content
+    
+
+    // Primary :: Start
+
+    .primary
+        .container
+            figure.primary__image
+                img(src="img/img-primary-1.jpg", alt="")
+            .primary__wrapper
+
+                .row.align-items-center
+                    .col-md-6
+                        span.primary__heading Новинки от BLITHE
+                    .col-md-6
+                        ul.primary__menu
+                            li
+                                a(href="#").primary__menu-link Волосы <sup>11</sup>
+                            li
+                                a(href="#").primary__menu-link.is-active Лицо <sup>27</sup>
+                            li
+                                a(href="#").primary__menu-link Тело <sup>32</sup>
+                            li
+                                a(href="#").primary__menu-link Косметика <sup>42</sup>
+                            li
+                                a(href="#").primary__menu-link Аксессуары <sup>15</sup>
+                            li
+                                a(href="#").primary__menu-link Украшения <sup>12</sup>
+                
+                .primary__more
+                    a(href="#").btn.btn--white ВСЕ НОВЫЕ ПОСТУПЛЕНИЯ
+
+
+    
+    // Primary :: End
+    
+
+    // Category :: Start
+    .category
+        .container
+            .category__heading Ищете что-то особенное?
+            .category__grid
+                .row
+                    .col-sm-6.col-lg-4
+                        a(href="#").category__item
+                            figure.category__item-image
+                                img(src="img/img-category-1.jpg", alt="")
+                            .category__item-caption ВОЛОСЫ
+                    .col-sm-6.col-lg-4
+                        a(href="#").category__item
+                            figure.category__item-image
+                                img(src="img/img-category-2.jpg", alt="")
+                            .category__item-caption ЛИЦО
+                    .col-sm-6.col-lg-4
+                        a(href="#").category__item
+                            figure.category__item-image
+                                img(src="img/img-category-3.jpg", alt="")
+                            .category__item-caption ТЕЛО
+                    .col-sm-6.col-lg-4
+                        a(href="#").category__item
+                            figure.category__item-image
+                                img(src="img/img-category-4.jpg", alt="")
+                            .category__item-caption КОСМЕТИКА
+                    .col-sm-6.col-lg-4
+                        a(href="#").category__item
+                            figure.category__item-image
+                                img(src="img/img-category-5.jpg", alt="")
+                            .category__item-caption АКСЕССУАРЫ
+                    .col-sm-6.col-lg-4
+                        a(href="#").category__item
+                            figure.category__item-image
+                                img(src="img/img-category-6.jpg", alt="")
+                            .category__item-caption УКРАШЕНИЯ
+
+            .category__more
+                a(href="#").btn ВСЕ ТОВАРЫ
+
+    // Category :: End
+
+
+    hr.page__line
+
+    // Items :: Start
+
+    .items
+        .container
+            h2.items__heading Хиты продаж
+            .items__grid.js-carousel-grid
+         
+                .items__grid-item
+                    a(href="#").item
+                        h3.item__title BLITHE
+                        figure.item__image
+                            img(src="img/img-products-1.jpg", alt="")
+                        p.item__text Антивозрастная сыворотка для лица
+                        span.item__price ОТ 1 500 ₽
+
+                .items__grid-item
+                    a(href="#").item
+                        h3.item__title DR.JART+
+                        figure.item__image
+                            img(src="img/img-products-2.jpg", alt="")
+                        p.item__text Маска с эффектом аппаратного лифтинга
+                        span.item__price ОТ 1 500 ₽
+
+                .items__grid-item
+                    a(href="#").item
+                        h3.item__title DR.JART+
+                        figure.item__image
+                            img(src="img/img-products-3.jpg", alt="")
+                        p.item__text Антивозростная сыворотка с муцином улитки Антивозростная сыворотка с муцином улитки
+                        span.item__price ОТ 1 500 ₽
+
+                .items__grid-item
+                    a(href="#").item
+                        h3.item__title ST BARTH
+                        figure.item__image
+                            img(src="img/img-products-4.jpg", alt="")
+                        p.item__text Восстанавливающий гель для волос
+                        span.item__price ОТ 1 500 ₽
+
+                .items__grid-item
+                    a(href="#").item
+                        h3.item__title MOIST DIANE
+                        figure.item__image
+                            img(src="img/img-products-5.jpg", alt="")
+                        p.item__text Увлажняющий шампунь для волос
+                        span.item__price ОТ 1 500 ₽
+
+                .items__grid-item
+                    a(href="#").item
+                        h3.item__title ST BARTH
+                        figure.item__image
+                            img(src="img/img-products-6.jpg", alt="")
+                        p.item__text Кокосовое масло для лица и тела
+                        span.item__price ОТ 1 500 ₽
+
+                .items__grid-item
+                    a(href="#").item
+                        h3.item__title DR.JART+
+                        figure.item__image
+                            img(src="img/img-products-7.jpg", alt="")
+                        p.item__text Антивозростная сыворотка с муцином улитки
+                        span.item__price ОТ 1 500 ₽
+
+                .items__grid-item
+                    a(href="#").item
+                        h3.item__title BLITHE
+                        figure.item__image
+                            img(src="img/img-products-8.jpg", alt="")
+                        p.item__text Сплэш-маска для сияния
+                        span.item__price ОТ 1 500 ₽
+
+    // Items :: End
+
+
+    // Move :: Start
+    
+    .move
+        .container
+            figure.move__image
+                img(src="img/img-move-1.jpg", alt="")
+            h2.move__heading Ежедневный уход
+            a(href="#").btn.btn--white ПЕРЕЙТИ В КАТАЛОГ
+
+    // Move :: End
+
+    // Items :: Start
+
+    .items.items--other
+        .container
+            h2.items__heading Летние бестселлеры
+            .items__carousel.js-carousel
+                .items__carousel-item
+                    a(href="#").item
+                        h3.item__title BLITHE
+                        figure.item__image
+                            img(src="img/img-products-1.jpg", alt="")
+                        p.item__text Антивозрастная сыворотка для лица
+                        span.item__price ОТ 1 500 ₽
+                
+                .items__carousel-item
+                    a(href="#").item
+                        h3.item__title DR.JART+
+                        figure.item__image
+                            img(src="img/img-products-2.jpg", alt="")
+                        p.item__text Маска с эффектом аппаратного лифтинга
+                        span.item__price ОТ 1 500 ₽
+                
+                .items__carousel-item
+                    a(href="#").item
+                        h3.item__title DR.JART+
+                        figure.item__image
+                            img(src="img/img-products-3.jpg", alt="")
+                        p.item__text Антивозростная сыворотка с муцином улитки Антивозростная сыворотка с муцином улитки
+                        span.item__price ОТ 1 500 ₽
+                
+                .items__carousel-item
+                    a(href="#").item
+                        h3.item__title ST BARTH
+                        figure.item__image
+                            img(src="img/img-products-4.jpg", alt="")
+                        p.item__text Восстанавливающий гель для волос
+                        span.item__price ОТ 1 500 ₽
+
+    // Items :: End
+
+    // Subsc :: Start
+    .subsc
+        .container
+            h2.subsc__heading Не хотите ничего пропустить?
+            p.subsc__text Подписывайтесь на нашу полезную рассылку и оставайтесь в курсе событий!
+            .subsc__form
+                form(action="#")
+                    label.subsc__field
+                        input(type="text" placeholder="" required).subsc__input
+                        span.subsc__label ВАШ E-MAIL
+                    button.subsc__btn ПОДПИСАТЬСЯ
+    // Subsc :: End
+
+
+
+
+            
+
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="5px" viewBox="0 0 5 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>mini plus</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="1200_shop_list-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-285.000000, -685.000000)">
+        <g id="mini-plus" transform="translate(287.535534, 687.535534) rotate(-315.000000) translate(-287.535534, -687.535534) translate(285.035534, 685.035534)" stroke="#000000" stroke-width="0.5">
+            <path d="M2.5,0 L2.5,5" id="Line-2"></path>
+            <path d="M0,2.5 L5,2.5" id="Line-3"></path>
+        </g>
+    </g>
+</svg>

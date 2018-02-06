@@ -1,0 +1,119 @@
+---
+title: Card - Keep Looking
+bodyClass: page-basket
+---
+extends shared/_layout
+block content
+    
+
+    // Card :: Start
+    .card
+        .container
+
+            ul.breadcrumbs
+                li
+                    a(href="#").breadcrumbs__link ГЛАВНАЯ
+                li
+                    a(href="#").breadcrumbs__link волосы
+                li
+                    a(href="#").breadcrumbs__link kevin murphy luxUry wash
+
+            a(href="#").card__back НАЗАД В КАТАЛОГ
+
+            .row
+                .col-md-6
+                    figure.card__image
+                        img(src="img/img-card-1.png", alt="")
+                    p.card__wishlist
+                        a(href="#").card__wishlist-link
+                            | В ВИШЛИСТ
+                            +icon('ico-like')
+
+                .col-md-6
+                    .card__desc
+                        h1.card__heading Антивозрастная Time Returning Mask
+                        dl.card__info.js-accordion
+                            dt Описание
+                            dd
+                                p Универсальное антивозрастное средство, которое оперативно стирает следы усталости и возвращает коже молодость.
+                            dt Способ применения
+                            dd
+                                p Универсальное антивозрастное средство, которое оперативно стирает следы усталости и возвращает коже молодость.
+                            dt Ингридиенты
+                            dd
+                                p Универсальное антивозрастное средство, которое оперативно стирает следы усталости и возвращает коже молодость.
+                            dt Условия доставки
+                            dd
+                                p Универсальное антивозрастное средство, которое оперативно стирает следы усталости и возвращает коже молодость.
+
+                        .card__count
+                            label.card__label Количество
+                            select.ui-select.ui-select--number
+                                option 1 ШТ
+                                option 2 ШТ
+                                option 3 ШТ
+                                option 4 ШТ
+                                option 5 ШТ
+
+                        p.card__price 2 000 ₽ <u>2 750 ₽</u>
+
+                        a(href="#").btn.btn--block.btn--purple Добавить в корзину
+
+    // Card :: End
+
+    // Items :: Start
+
+    .items.items--other
+        .container
+            h2.items__heading ВОЗМОЖНО ВАС ТАК ЖЕ ЗАИНТЕРЕСУЕТ…
+            .items__carousel.js-carousel
+
+                a(href="#").item
+                    h3.item__title BLITHE
+                    figure.item__image
+                        img(src="img/img-products-1.jpg", alt="")
+                    p.item__text Антивозрастная сыворотка для лица
+                    span.item__price ОТ 1 500 ₽
+
+                a(href="#").item
+                    h3.item__title DR.JART+
+                    figure.item__image
+                        img(src="img/img-products-2.jpg", alt="")
+                    p.item__text Маска с эффектом аппаратного лифтинга
+                    span.item__price ОТ 1 500 ₽
+
+                a(href="#").item
+                    h3.item__title DR.JART+
+                    figure.item__image
+                        img(src="img/img-products-3.jpg", alt="")
+                    p.item__text Антивозростная сыворотка с муцином улитки Антивозростная сыворотка с муцином улитки
+                    span.item__price ОТ 1 500 ₽
+
+                a(href="#").item
+                    h3.item__title ST BARTH
+                    figure.item__image
+                        img(src="img/img-products-4.jpg", alt="")
+                    p.item__text Восстанавливающий гель для волос
+                    span.item__price ОТ 1 500 ₽
+
+    // Items :: End
+
+    // Subsc :: Start
+    .subsc
+        .container
+            h2.subsc__heading Не хотите ничего пропустить?
+            p.subsc__text Подписывайтесь на нашу полезную рассылку и оставайтесь в курсе событий!
+            .subsc__form
+                form(action="#")
+                    label.subsc__field
+                        input(type="text" placeholder="" required).subsc__input
+                        span.subsc__label ВАШ E-MAIL
+                    button.subsc__btn ПОДПИСАТЬСЯ
+    // Subsc :: End
+
+
+
+
+            
+
+

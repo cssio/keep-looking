@@ -1,0 +1,336 @@
+// UI
+
+
+
+.text-right
+  text-align: right
+
+.ui-table
+  width: 100%
+  text-align: left
+  font-size: 14px
+  line-height: 20px
+  margin: 0 0 30px
+  th, td
+    padding: 5px 0
+
+
+
+.ui-ul
+    margin: 35px 0
+    padding: 0
+    list-style: none
+    font-size: 14px
+    line-height: 18px
+    & > li
+        position: relative
+        padding: 0 0 0 28px
+        margin: 0 0 10px
+        &:after
+            content: ''
+            display: block
+            position: absolute
+            top: 10px
+            left: 0
+            width: 4px
+            height: 4px
+            border-radius: 50%
+            background: #D9B1B1
+    +rmin($desktop)
+        margin-left: 50px
+
+
+.ui-ol
+    margin: 35px 0
+    padding: 0
+    list-style: none
+    counter-reset: point
+    font-size: 14px
+    line-height: 18px
+    & > li
+        position: relative;
+        padding: 0 0 0 28px
+        margin: 0 0 10px
+        &:after
+            content: counter(point) '.'
+            counter-increment: point 1
+            color: #D9B1B1
+            position: absolute
+            top: 0
+            left: 0
+            font-weight: 700
+    +rmin($desktop)
+        margin-left: 50px
+
+
+
+
+
+// THIS IS REGULAR CLASS MODIFIER FOR THE INPUT IT
+
+.ui-field
+  display: block
+  margin: 0
+  position: relative
+  margin: 0 0 30px
+  cursor: pointer
+  .ui-input, .ui-select
+    margin: 0
+
+
+.ui-field__label
+  transition: 0.25s
+  display: block
+  position: absolute
+  top: 0
+  left: 0
+  font: 14px/20px 'Engravers Gothic', Helvetica, Arial, sans-serif
+
+.ui-input
+  width: 100%
+  height: 28px
+  margin: 0 0 30px
+  font: 14px/20px 'Engravers Gothic', Helvetica, Arial, sans-serif
+  padding: 0 0 7px
+  background: none
+  border: none
+  border-bottom: 1px solid #000
+  color: #000
+  text-transform: uppercase
+  transition: 0.25s
+  &::placeholder
+    color: #000
+    transition: 0.25s
+  &:focus::placeholder
+    opacity: 0
+  &:focus, &:valid
+    border-color: #000
+    color: #000
+    & ~ .ui-field__label
+      font-size: 10px
+      top: -20px
+      color: #000
+  +rmin($desktop)
+    margin: 0
+
+.ui-textarea
+  @extend .ui-input
+  display: block
+  min-width: 100%
+  height: 120px
+  resize: none
+  max-width: 100%
+
+
+.ui-select
+  width: 100%
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  cursor: pointer
+  // font-size: 12px
+  // line-height: 23px
+  // font-weight: 700
+  // letter-spacing: 1.5px
+  margin: 0 0 30px
+  @extend .ui-input
+  
+  select
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    margin: 0
+    padding: 0
+    opacity: 0
+    visibility: hidden
+
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+  li
+    user-select: none
+    white-space: nowrap
+
+
+  &.changed ~ .ui-field__label,
+  &.opened ~ .ui-field__label
+    font-size: 10px
+    top: -20px
+    color: #000
+
+  &.opened
+    .jq-selectbox__trigger
+      transform: rotate(180deg)
+
+
+  .placeholder
+    color: rgba(0,0,0,0.6)
+
+  .jq-selectbox__select
+    // border-bottom: 1px solid #000000
+    margin: 0
+    padding: 0 30px 0 0
+    height: 100%
+    // padding: 0 30px 5px 0
+    // text-transform: uppercase
+    // min-height: 28px
+
+  .jq-selectbox__select-text
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+    user-select: none
+    height: 100%
+
+  .jq-selectbox__trigger
+    width: 30px
+    height: 100%
+    display: block
+    position: absolute
+    top: 0
+    right: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: .25s
+    opacity: 0.6
+
+  .jq-selectbox__trigger-arrow
+    display: block
+    position: relative
+    font-size: 4px
+    color: #000
+    .ico
+      fill: none
+      stroke-width: 1
+      stroke: currentColor
+  
+
+  .jq-selectbox__dropdown
+    position: absolute
+    top: -1px !important
+    left: -1px
+    right: -1px
+    min-width: 100%
+
+    background: #fff
+    border-radius: 0
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 0
+    overflow: hidden
+    line-height: 23px
+
+  ul
+    position: relative
+    list-style: none
+    overflow: auto
+    overflow-x: hidden
+    -webkit-overflow-scrolling: touch
+    // max-height: 252px !important
+  li
+    padding: 0 12px 5px
+    color: #000
+    cursor: pointer
+    display: block
+    transition: .25s
+    &:hover
+      background: #D9B1B1
+      color: #fff
+
+
+
+
+
+
+.ui-select--number
+  border: 1px solid #000
+  padding-left: 12px
+  .jq-selectbox__select
+    
+
+
+.ui-select--sorting
+  .jq-selectbox__select
+    padding-right: 15px
+  .jq-selectbox__trigger
+    width: 5px
+  .jq-selectbox__trigger-arrow
+    width: 5px
+    height: 5px
+    backface-visibility: hidden
+    &:after, &:before
+        content: ''
+        display: block
+        position: absolute
+        top: 50%
+        left: 50%
+        background: #000
+        transform: translate(-50%,-50%)
+    &:after
+      width: 5px
+      height: 1px
+    &:before
+      width: 1px
+      height: 5px
+    .ico
+      display: none
+
+
+// Checkbox
+.ui-checkbox
+  input
+    display: none
+    width: 0.1px
+    height: 0.1px
+    opacity: 0
+    position: absolute
+    top: 0
+    left: 0
+    &:checked
+      + label
+        &::before
+          border-color: $colorGreen
+        &::after
+          transform: translateY(-50%) scale(1)
+  label
+    display: block
+    width: 100%
+    position: relative
+    cursor: pointer
+    &::before
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      display: inline-block
+      content: ' '
+      size: 20px
+      background-color: white
+      border: 1px solid #AFB7C0
+      border-radius: 4px
+      cursor: pointer
+      vertical-align: middle
+      cursor: pointer
+      transition: all $transitionSpeed ease-in-out
+    &::after
+      position: absolute
+      left: 1px
+      top: 50%
+      transform: translateY(-50%) scale(0)
+      display: inline-block
+      content: ' '
+      size: 20px
+      // background-image: svg-load('../../images/svg/checkbox.svg')
+      background-repeat: no-repeat
+      background-position: center
+      transition: transform .2s ease
+    span
+      display: inline-block
+      padding-left: 35px
+      vertical-align: top
+      line-height: 1.3
+      font-size: 14px
+      cursor: pointer

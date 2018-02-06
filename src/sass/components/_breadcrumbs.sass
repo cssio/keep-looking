@@ -1,0 +1,52 @@
+// Breadcrumbs
+
+.breadcrumbs
+	margin: 0 auto 30px
+	padding: 0
+	letter-spacing: normal
+	overflow: hidden
+	font-size: 12px
+	line-height: 15px
+	font-weight: 700
+	text-transform: uppercase
+	display: none
+	width: 100%
+	max-width: 940px
+
+	& > li 
+		float: left
+		position: relative
+		padding: 0 20px 0 0
+		&:after
+			content: '/'
+			display: block
+			position: absolute
+			top: 0
+			right: 0
+			width: 20px
+			text-align: center
+		&:last-child
+			padding: 0
+			&:after
+				display: none
+	+rmin($desktop)
+		display: block
+
+
+.breadcrumbs__link
+	display: inline-block
+	position: relative
+	transition: 0.25s
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 0
+		height: 1px
+		background: #000
+		transition: 0.25s
+	&:hover
+		&:after
+			width: 100%

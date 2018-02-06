@@ -1,0 +1,132 @@
+// Primary
+
+.primary
+	position: relative
+	z-index: 1
+	margin: -90px 0 0
+	padding: 90px 0 0
+	background: #ccc
+	// min-height: 100vh
+	display: flex
+	min-height: 470px
+	+rmin($desktop)
+		margin: -130px 0 0
+		padding: 130px 0 0
+
+		
+		
+
+.primary__more
+	width: 100%
+	margin: auto 0 0
+	+rmin($tablet)
+		display: none
+
+.primary__image
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	margin: 0
+	z-index: -1
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(0,0,0,0.2)
+		
+		transition: 0.25s
+	img
+		display: block
+		width: 100%
+		height: 100%
+		object-fit: cover
+
+.primary__wrapper
+	height: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	padding: 40px 0 20px 0
+	text-align: center
+	.breadcrumbs
+		align-self: flex-start
+	.row
+		min-width: 100%
+	+rmin($tablet)
+		text-align: left
+		padding: 10px 0 40px
+		
+
+.primary__heading
+	display: block
+	width: 100%
+	margin: 0 0 10px
+	letter-spacing: 0.5px
+	color: #fff
+	font: 400 22px/25px 'Optima', Helvetica, Arial, sans-serif
+	+rmin($mobile)
+		font-size: 32px
+		line-height: 35px
+	+rmin($tablet)
+		font-size: 48px
+		line-height: 50px
+	+rmin($desktop)
+		font-size: 68px
+		line-height: 70px
+
+.primary__menu
+	margin: 0
+	padding: 0
+	list-style: none
+	font: 400 42px/70px 'Optima', Helvetica, Arial, sans-serif
+	display: none
+	& > li
+		display: block
+	+rmin($tablet)
+		display: block
+
+.primary__menu-link
+	color: #fff
+	opacity: 0.5
+	transition: 0.25s
+	sup
+		font-size: 16px
+		margin: 0 0 10px
+		position: relative
+		display: inline-block
+		vertical-align: middle
+	&:hover, &.is-active
+		opacity: 1
+
+
+.primary__desc
+	font: 400 14px/20px 'Optima', Helvetica, Arial, sans-serif
+	letter-spacing: 0.9px
+	text-align: center
+	margin: auto
+	padding: 0 0 30px
+	width: 100%
+	max-width: 760px
+	+rmin($tablet)
+		font-size: 16px
+		line-height: 30px
+		letter-spacing: 1px
+		margin: 0 auto auto
+		padding: 0
+
+
+.primary__desc-title
+	display: block
+	font-size: 16px
+	margin: 0 0 22px
+	+rmin($tablet)
+		font-size: 22px
+
+.primary__desc-text
+	margin: 0

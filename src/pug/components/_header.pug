@@ -1,0 +1,51 @@
+// HEADER :: START
+header.header
+    .container
+
+        nav.nav.nav--desktop
+            ul.nav__menu.nav__menu--left
+                li
+                    a(href="shop.html").nav__link САЛОН
+                li
+                    a(href="shop.html").nav__link МАГАЗИН
+                li
+                    a(href="shop.html").nav__link КУРСЫ
+
+            a(href="homepage.html").logo
+                +icon('ico-logo')
+            
+            ul.nav__menu.nav__menu--right
+                li
+                    a(href="contacts.html").nav__link АДРЕСА
+                li
+                    a(href="#").nav__link КАБИНЕТ
+                li
+                    a(href="card.html").nav__link КОРЗИНА <small>[0]</small>
+
+
+        nav.nav.nav--mobile
+
+            a(href="homepage.html").logo
+                +icon('ico-logo')
+
+            button.nav__btn
+
+            .nav__dropdown
+                ul.nav__menu
+                    li
+                        a(href="shop.html").nav__link САЛОН
+                    li
+                        a(href="shop.html").nav__link МАГАЗИН
+                    li
+                        a(href="shop.html").nav__link КУРСЫ
+
+                    li
+                        a(href="contacts.html").nav__link АДРЕСА
+                    li
+                        a(href="#").nav__link КАБИНЕТ
+                    li
+                        a(href="basket.html").nav__link КОРЗИНА <small>[0]</small>
+
+      
+        
+// HEADER :: END

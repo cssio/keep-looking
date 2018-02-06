@@ -1,0 +1,89 @@
+// Category
+
+
+.category
+	padding: 30px 0 60px
+	background: #fff
+	.container
+		max-width: 960px
+	+rmin($desktop)
+		padding: 70px 0 65px
+
+.category__heading
+	text-align: center
+	font: 400 22px/28px 'Optima', Helvetica, Arial, sans-serif
+	margin: 0 0 30px
+	+rmin($desktop)
+		margin: 0 0 55px
+
+
+.category__grid
+	padding: 0 0 40px
+	[class^="col-"], [class*=" col-"]
+		margin: 0 0 20px
+		+r($mobile)
+			margin: 0 0 10px
+
+
+.category__item
+	display: block
+	position: relative
+	z-index: 10
+	overflow: hidden
+	background: #000
+	color: #fff
+	font-size: 16px
+	line-height: 30px
+	font-weight: 700
+	letter-spacing: 1.5px
+	height: 70px
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(0,0,0,0.2)
+		z-index: -1
+		transition: 0.25s
+	&:before
+		content: ''
+		float: left
+		padding: 100% 0 0
+	&:hover
+		.category__item-image img
+			transform: scale(1.1)
+	+rmin($mobile)
+		height: auto
+
+
+.category__item-image
+	margin: 0
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: -1
+	img
+		display: block
+		width: 100%
+		height: 100%
+		object-fit: cover
+		transition: 0.25s
+
+.category__item-caption
+	display: block
+	margin: 0
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%,-50%)
+
+
+.category__more
+	text-align: center
+	.btn
+		min-width: 300px
